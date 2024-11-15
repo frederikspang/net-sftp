@@ -30,7 +30,7 @@ module Net
     #
     # Extra parameters can be passed:
     # - The Net::SSH connection options (see Net::SSH for more information)
-    # - The Net::SFTP connection options (only :version is supported, to let you 
+    # - The Net::SFTP connection options (only :version is supported, to let you
     #   set the SFTP protocol version to be used)
     def self.start(host, user, ssh_options={}, sftp_options={}, &block)
       session = Net::SSH.start(host, user, ssh_options)
